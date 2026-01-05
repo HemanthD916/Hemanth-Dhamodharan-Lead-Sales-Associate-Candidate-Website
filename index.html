@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hemanth Dhamodharan Candidate Profile | Lead Sales Associate Application</title>
+    <meta name="description" content="Portfolio for Lead Sales Associate candidate. Highly analytical, reliable, and customer-focused.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:wght@400;500;600;900&display=swap" rel="stylesheet">
+
+    <style>
+        
+        :root {
+            --pvh-black: #000000;
+            --pvh-white: #ffffff;
+            --th-blue: #00174f;
+            --th-red: #c8102e;
+            --font-serif: 'Libre Baskerville', serif;
+            --font-sans: 'Libre Franklin', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-serif);
+            background-color: var(--pvh-white);
+            color: var(--pvh-black);
+            overflow-x: hidden;
+            line-height: 1.5;
+        }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; padding: 0; }
+
+        
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+            padding: 1rem 0;
+        }
+
+        .nav__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo-text {
+            font-family: var(--font-sans);
+            font-weight: 900;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .nav-links a {
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-left: 30px;
+            letter-spacing: 1px;
+        }
+
+        
+        .hero {
+            margin-top: 80px;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-family: var(--font-sans);
+            font-weight: 900;
+            font-size: 4rem;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: var(--th-red);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            font-style: italic;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--pvh-black);
+            color: white;
+            padding: 15px 40px;
+            font-family: var(--font-sans);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 1px solid var(--pvh-black);
+        }
+
+        .btn:hover {
+            background: white;
+            color: var(--pvh-black);
+        }
+
+        
+        .mosaic-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            font-family: var(--font-sans);
+            font-weight: 900;
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            border-bottom: 4px solid var(--pvh-black);
+            display: inline-block;
+        }
+
+        .mosaic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .tile {
+            border: 1px solid #eee;
+            padding: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .tile:hover {
+            transform: translateY(-5px);
+            border-color: var(--pvh-black);
+        }
+
+        .tile h3 {
+            font-family: var(--font-sans);
+            font-weight: 700;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .tile ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .tile ul li::before {
+            content: "■";
+            color: var(--th-blue);
+            font-size: 10px;
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+
+        
+        .resume-block {
+            background: #f9f9f9;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .job-match-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .job-match-table th, .job-match-table td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .job-match-table th {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        
+        footer {
+            background: var(--pvh-black);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            font-family: var(--font-sans);
+        }
+
+        .ats-hidden {
+            opacity: 0;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="nav__inner">
+            <div class="logo-text">CANDIDATE <span>PROFILE</span></div>
+            <div class="nav-links">
+                <a href="#skills">Capabilities</a>
+                <a href="#experience">Experience</a>
+                <a href="#availability">Availability</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div>
+            <h1>The Power of <br><span>Reliability</span></h1>
+            <p>Bringing operational excellence, analytical precision, and a customer first mindset to the Tommy Hilfiger team.</p>
+            <a href="mailto:hemanthdhamodharan@my.unt.edu" class="btn">Contact Candidate: hemanthdhamodharan@my.unt.edu</a>
+        </div>
+    </section>
+
+    <section class="mosaic-section" id="skills">
+        <h2 class="section-header">Operational Excellence</h2>
+        <div class="mosaic-grid">
+            
+            <div class="tile">
+                <h3>Customer Service & Sales</h3>
+                <ul>
+                    <li><strong>Standard of Excellence:</strong> Experienced in creating positive environments (YMCA Volunteer) mirroring TH Service Standards.</li>
+                    <li><strong>Communication:</strong> Strong verbal and written skills developed through collaborative academic projects and community leadership.</li>
+                    <li><strong>Engagement:</strong> Proven ability to lead interactive sessions and manage diverse groups of people.</li>
+                </ul>
+            </div>
+
+            <div class="tile">
+                <h3>Operations & Accuracy</h3>
+                <ul>
+                    <li><strong>Inventory Logic:</strong> Designed a Python-based Library Management System (Add/Edit/Delete/Track), directly translatable to <strong>Stockroom & Merchandise Management</strong>.</li>
+                    <li><strong>Data Handling:</strong> Proficient in Excel and SQL, ensuring 100% accuracy in data capturing and potential POS reconciliation.</li>
+                    <li><strong>Loss Prevention Mindset:</strong> Detail oriented approach to tracking items and status, critical for minimizing shortages.</li>
+                </ul>
+            </div>
+
+            <div class="tile">
+                <h3>Leadership & Reliability</h3>
+                <ul>
+                    <li><strong>Adaptability:</strong> Accustomed to fast paced environments and learning new systems (IBM Z, Tableau, POS systems).</li>
+                    <li><strong>Work Ethic:</strong> Dean's List student (3.2 GPA) balancing complex coursework and certifications.</li>
+                    <li><strong>Schedule Flexibility:</strong> Willing to work rotating hours, nights, weekends, and holidays to support business needs.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mosaic-section" id="experience">
+        <h2 class="section-header">Candidate Qualifications</h2>
+        <div class="resume-block">
+            <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                <strong>Candidate:</strong> Business Computer Information Systems Student (University of North Texas)<br>
+                <strong>Focus:</strong> Bridging technology with business operations.
+            </p>
+
+            <table class="job-match-table">
+                <thead>
+                    <tr>
+                        <th>Job Requirement</th>
+                        <th>My Matching Qualification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Collect/Compile Data & Analysis</strong></td>
+                        <td>Advanced proficiency in <strong>Excel, Python, and SQL</strong>. Capable of analyzing sales trends and shortage reports.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Maintain Store Appearance/Merchandising</strong></td>
+                        <td>Detail-oriented mindset proven by <strong>High Fidelity Data Projects</strong>. I understand that small details (like visual standards) impact the big picture.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Support Department/Ad-hoc Projects</strong></td>
+                        <td>Experience handling <strong>multiple complex projects</strong> simultaneously (Ride Share System + Library System).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Customer Service Standards</strong></td>
+                        <td><strong>YMCA Volunteer Experience:</strong> Ensuring safe, engaging, and high quality experiences for families.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Physical Demands</strong></td>
+                        <td>Physically active, capable of standing for long periods and lifting 40 pounds (Experience setting up events/playgrounds at YMCA).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section style="text-align: center; padding: 60px 20px; background-color: var(--th-blue); color: white;">
+        <h2 style="font-family: var(--font-sans); text-transform: uppercase; margin-bottom: 20px;">Ready to Drive Results</h2>
+        <p style="max-width: 600px; margin: 0 auto 30px auto;">
+            I am looking to apply my strong work ethic, analytical capability, and passion for the brand to the Lead Sales Associate role.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Hemanth Dhamodharan Candidate Portfolio. Built for PVH / Tommy Hilfiger Application.</p>
+        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 10px;">
+        </p>
+
+        <div class="ats-hidden">
+            KEYWORDS: Lead Sales Associate, Part-Time, Tommy Hilfiger, PVH, Customer Service Standards, Cash Responsibilities, Operational Activities, Merchandise Replenishment, Loss Prevention, Sales Plans, Business Results, Marketing, Finance, Sales, Data Analysis, Python, SQL, Excel, PowerPoint, Market Research, Surveys, Inventory Management, Store Appearance, Visual Merchandising, Night Shifts, Weekends, Holidays, Register Transactions, Refunds, Exchanges, Gift Cards, Lifting 40 pounds, Standing, Team Player, Reliable, Communication Skills, Fast-paced Environment, Attention to Detail, Retail, Fashion, Lifestyle Brand.
+            SUMMARY: As a part of the Business Strategy & Analytics Team, the apprentice will be responsible for collecting data, performing data analysis.
+            COMPETENCIES: Analytical Thinking, Collaboration, Communication, Adaptability, Data Driven Decision Making.
+        </div>
+    </footer>
+
+</body>
+</html>
